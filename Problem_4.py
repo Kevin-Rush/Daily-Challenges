@@ -31,7 +31,7 @@ def findLPI(list):
     else:
         return list[count-2] + 1
 
-list = [3, 4, -1, 1]
+list = [3, 4, -1, 1, 6]
 #print (findLPI(list))
 
 # NOTE: for a better solution we can ignroe all values greater than the legnth because if it is greater than the length 
