@@ -45,9 +45,11 @@ print(fill(frac, list))
 
 # https://www.cs.helsinki.fi/u/tpkarkka/opetus/10s/spa/lecture07.pdf
 
-what I can do is store it in a BST where the root is = the first letter of the first word
-then you have the word fill out on the right 
+# what I can do is store it in a BST where the root is = the first letter of the first word
+# then you have the word fill out on the right 
 
-
+# or what about a Tree where the root = -1 and then has a child where each branch is a word with the same
+# first letter and then all of it's children are then spelt out as nodes and this will build the permutations
+# of each word 
 
 
