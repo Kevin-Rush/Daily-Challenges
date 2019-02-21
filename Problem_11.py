@@ -21,7 +21,7 @@ def fillBrute(frac, list):
 
 frac = "de"
 list = ["dog", "deer", "deal"]
-print(fill(frac, list))
+#print(fill(frac, list))
 
 
                 
