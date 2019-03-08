@@ -39,7 +39,7 @@
 # # you can write to stdout for debugging purposes, e.g.
 # # print("this is a debug message")
 
-def solution(A, K):
+def solution1(A, K):
     
     temp = [0]*len(A)
 
@@ -105,3 +105,29 @@ def solution(A, K):
 # 3. 0.036 s OK
 # 4. 0.036 s OK
 
+#Code: Second Attempt
+
+def solution2(A, K):
+    
+    if len(A) <= 1:
+        return A
+    elif K > len(A):
+        return solution2(A, K-len(A))
+    else:
+        temp = [0]*len(A)
+
+        for i in range(len(A)):
+            h = i + K
+            if h > (len(A) - 1):
+                pos = h - len(A)
+                temp[pos] = A[i]
+            else:
+                temp[h] = A[i]
+        
+        return temp
+
+#Result: 75%
+
+A = [1,2,3,4,5]
+K = 13
+print(solution2(A,K))
